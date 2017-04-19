@@ -1,0 +1,8 @@
+{
+    "name": "proximate/core",
+    "autoload": {
+      "psr-0" : {
+        "Proximate": "src/"
+      }
+    }
+}
