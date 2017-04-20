@@ -1,8 +1,9 @@
 {
     "name": "proximate/core",
+    "description": "Shared classes for the Proximate repos",
     "autoload": {
-      "psr-0" : {
-        "Proximate": "src/"
-      }
+        "psr-0": {
+            "Proximate": "src/"
+        }
     }
 }
