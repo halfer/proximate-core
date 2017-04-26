@@ -1,2 +1,6 @@
 # Ignore IDE
 nbproject/
+
+# Ignore Composer stuff
+vendor/
+composer
