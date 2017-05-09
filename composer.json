@@ -1,6 +1,9 @@
 {
     "name": "proximate/core",
     "description": "Shared classes for the Proximate repos",
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*"
+    },
     "autoload": {
         "psr-0": {
             "Proximate": "src/"
