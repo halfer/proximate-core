@@ -57,6 +57,15 @@ class File
         return glob($pattern);
     }
 
+    /**
+     * Renames a file
+     *
+     * @todo Maybe a file exists on the first parameter?
+     *
+     * @param string $oldname
+     * @param string $newname
+     * @throws NotWritableException
+     */
     public function rename($oldname, $newname)
     {
         $ok = @rename($oldname, $newname);
@@ -69,6 +78,13 @@ class File
         $this->writeLog("Renaming `$oldname` to `$newname`", $ok);
     }
 
+    /**
+     * Copies a set of files matching a pattern to a specified directory
+     *
+     * @param string $pattern
+     * @param string $targetDir
+     * @throws NotWritableException
+     */
     public function copy($pattern, $targetDir)
     {
         $files = $this->glob($pattern);
